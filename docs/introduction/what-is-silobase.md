@@ -30,19 +30,23 @@ That was the inspiration behind Silobase: a backend service that works with *you
 Silobase is designed to be minimal and infrastructure-agnostic.
 
 ```text
-  [ Client App ]
-        ↓ HTTP
-  +---------------------+
-  |     Silobase API    |
-  | ------------------- |
-  |  REST Handler       |
-  |  Config Loader      |
-  |  DB Connector       |
-  |  File Gateway       |
-  +---------------------+
-        ↓
-[ Your Database / File Storage ]
+                      [ Client Application ]
+                                │
+                                ▼  HTTP Request
+                      +-------------------------+
+                      |      Silobase API       |
+                      |-------------------------|
+                      | • REST Handler          |
+                      | • Config Loader         |
+                      | • DB Connector          |
+                      | • File Gateway          |
+                      +-------------------------+
+                                │
+                                ▼
+              [ Database (PostgreSQL, etc.) / File Storage ]
+
 ```
+
 Everything is configured via `.env`. Once set up, you can make HTTP calls to perform CRUD operations on your database or interact with other connected services.
 
 No custom backend code. No frameworks. Just your stack, exposed cleanly over HTTP.
