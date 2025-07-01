@@ -82,4 +82,4 @@ Silobase is designed to be pluggable — bring your own infrastructure and wire 
 
 ---
 
-*Want to start using Silobase? Head over to the [Getting Started](../getting-started.md) guide.*
+*Want to start using Silobase? Head over to the [Getting Started](/getting-started/quick-start) guide.*
