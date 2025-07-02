@@ -28,6 +28,36 @@ export default defineConfig({
            { text: 'Configuration via .env', link: '/getting-started/configuration-via-env' },
            { text: 'Example Requests', link:'/getting-started/example-requests'}
         ]
+      },
+      {
+        text: 'Deployment',
+        collapsed: false,
+        items: [
+          { text: 'Connect Your Database',
+            collapsed: true,
+            items: [
+              { text: 'PostgreSQL', link: '/deployment/database-connection/postgres' },
+              { text: 'MSSQL', link: '/deployment/database-connection/mssql' }
+            ]
+          },
+          {
+            text: 'Cloud Deployment',
+            collapsed: true,
+            items: [
+              { text: 'Render', link: '/deployment/cloud-deployment/render' },
+              { text: 'AWS Elastic Beanstalk', link: '/deployment/cloud-deployment/aws' },
+              { text: 'Azure Web Service', link: '/deployment/cloud-deployment/azure' }
+            ]
+          },
+          {
+            text: 'CI/CD',
+            collapsed: true,
+            items: [
+              { text: 'Azure CI/CD with GitHub Actions', link: '/deployment/ci-cd/azure-ci-cd' },
+              { text: 'AWS CI/CD with GitHub Actions', link: '/deployment/ci-cd/aws-ci-cd' }
+            ]
+          }
+        ]
       }
     ],
 

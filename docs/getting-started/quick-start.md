@@ -78,7 +78,7 @@ curl --location 'http://localhost:3000/rest/v1/users' \
 
 > All requests must include a valid API key in the `x-api-key` header.
 
-## 🔐 API Key Permissions
+## API Key Permissions
 
 | Key Type | Permissions                |
 | -------- | -------------------------- |

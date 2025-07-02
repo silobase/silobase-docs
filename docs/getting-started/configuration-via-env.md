@@ -3,7 +3,7 @@
 Silobase is configured entirely through environment variables, making it easy to connect to your infrastructure and deploy across different environments. Below is a complete overview of the required and upcoming configuration options available through the `.env` file.
 
 
-## 🛠 Required Configuration
+##  Required Configuration
 
 These are the core environment variables required to run Silobase:
 
@@ -20,7 +20,7 @@ API_KEY_WRITE=
 API_KEY_FULL=
 ````
 
-### 🔑 Environment Variable Descriptions
+### Environment Variable Descriptions
 
 | Variable        | Description                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------- |
@@ -34,15 +34,15 @@ API_KEY_FULL=
 | `API_KEY_WRITE` | API key used to authorize `POST`, `PUT`, and `DELETE` requests (write access).                     |
 | `API_KEY_FULL`  | Master key with full access to all operations (read, write, update, delete).                       |
 
-> ⚠️ All API requests to Silobase must include the appropriate key in the `x-api-key` header.
+> All API requests to Silobase must include the appropriate key in the `x-api-key` header.
 
 ---
 
-## 🚧 Coming Soon
+## Coming Soon
 
 These environment variables are planned for future releases as Silobase expands its provider support and feature set:
 
-### 📦 Storage Configuration (Planned)
+### Storage Configuration (Planned)
 
 | Variable              | Description                                                   |
 | --------------------- | ------------------------------------------------------------- |
@@ -51,7 +51,7 @@ These environment variables are planned for future releases as Silobase expands 
 | `STORAGE_ACCESS_KEY`  | Access key for the storage service.                           |
 | `STORAGE_SECRET_KEY`  | Secret key or credential used to authenticate storage access. |
 
-### 📧 Email Provider Configuration (Planned)
+### Email Provider Configuration (Planned)
 
 | Variable             | Description                                                   |
 | -------------------- | ------------------------------------------------------------- |
@@ -61,7 +61,7 @@ These environment variables are planned for future releases as Silobase expands 
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 * **Never commit `.env` files to version control.** Use `.env.example` to provide a safe template.
 * **Use strong, unique API keys** for each permission level.

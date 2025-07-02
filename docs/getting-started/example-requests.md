@@ -43,7 +43,7 @@ Supports filtering, pagination, and deep joins using query parameters.
 ### Example (cURL)
 
 ```bash
-curl --location --request GET 'http://localhost:3000/rest/v1/users?join=students:on=users.id=students.user_id&join=enrollments:on=students.id=enrollments.student_id&role=eq.admin' \
+curl --location --request GET 'http://localhost:3000/rest/v1/users?id=eq.1&select=firstname' \
   --header 'x-api-key: <API_KEY_READ>' \
   --header 'Content-Type: application/json'
 ```
