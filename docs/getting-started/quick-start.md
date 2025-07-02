@@ -15,15 +15,18 @@ npm install
 Create a `.env` file in the root directory and add the following:
 
 ```env
-PORT=3000
 DB_CLIENT=pg
-DATABASE_URL=postgres://username:password@localhost:5432/yourdb
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASSWORD=''
+DB_PORT=5432
+DB_NAME=postgres
 
 API_KEY_READ=your-read-key
 API_KEY_WRITE=your-write-key
 API_KEY_FULL=your-full-key
 ```
-> **Note:** Currently, Silobase supports PostgreSQL. Support for MySQL, SQLite, and MSSQL is coming soon.
+> **Note:** Currently, Silobase supports PostgreSQL and MSSQL. Support for MySQL, SQLite, etc is coming soon.
 
 
 ## 3. Start the Server

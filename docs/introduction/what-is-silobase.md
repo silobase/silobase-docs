@@ -73,13 +73,13 @@ Silobase is designed to be pluggable — bring your own infrastructure and wire 
 
 | Resource     | Provider     |
 |--------------|--------------|
-| Database     | PostgreSQL   |
+| Database     | PostgreSQL, MSSQL   |
 
 ### 🚧 Coming Soon
 
 | Resource      | Providers                              |
 |---------------|-----------------------------------------|
-| Database      | MySQL, SQLite, MSSQL                   |
+| Database      | MySQL, SQLite                          |
 | File Storage  | AWS S3, Azure Blob Storage             |
 | Email (Future) | SMTP, Mailgun, SendGrid (planned)     |
 
