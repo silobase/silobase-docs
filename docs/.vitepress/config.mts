@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Silobase",
   description: "An open-source Backend-as-a-Service (BaaS) that turns your database and file system into instant REST APIs — configurable via .env, no backend code required.",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
