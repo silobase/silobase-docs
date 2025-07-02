@@ -8,23 +8,31 @@ Silobase is configured entirely through environment variables, making it easy to
 These are the core environment variables required to run Silobase:
 
 ```env
-DB_CLIENT=pg
-DATABASE_URL=postgres://user:password@host:port/database
+DB_CLIENT= pg # or mssql
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_PORT=
+DB_NAME=
 
-API_KEY_READ=your-read-key
-API_KEY_WRITE=your-write-key
-API_KEY_FULL=your-full-key
+API_KEY_READ=
+API_KEY_WRITE=
+API_KEY_FULL=
 ````
 
 ### 🔑 Environment Variable Descriptions
 
-| Variable        | Description                                                                  |
-| --------------- | ---------------------------------------------------------------------------- |
-| `DB_CLIENT`     | The database driver to use. Currently supports `pg` (PostgreSQL).            |
-| `DATABASE_URL`  | Full connection string to your database (e.g., PostgreSQL DSN).              |
-| `API_KEY_READ`  | API key used to authorize `GET` requests (read-only access).                 |
-| `API_KEY_WRITE` | API key used to authorize `POST`, `PUT`, and `DELETE` requests.            |
-| `API_KEY_FULL`  | Master key with full access to all operations (read, write, update, delete). |
+| Variable        | Description                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------- |
+| `DB_CLIENT`     | Database driver to use. Currently supports only `pg` (PostgreSQL) and `mssql` (SQL Server).        |
+| `DB_HOST`       | Hostname or IP address of the database server.                                                     |
+| `DB_USER`       | Username for authenticating with the database.                                                     |
+| `DB_PASSWORD`   | Password for the specified database user.                                                          |
+| `DB_PORT`       | Port number for connecting to the database. Default is `5432` for PostgreSQL and `1433` for MSSQL. |
+| `DB_NAME`       | Name of the database to connect to.                                                                |
+| `API_KEY_READ`  | API key used to authorize `GET` requests (read-only access).                                       |
+| `API_KEY_WRITE` | API key used to authorize `POST`, `PUT`, and `DELETE` requests (write access).                     |
+| `API_KEY_FULL`  | Master key with full access to all operations (read, write, update, delete).                       |
 
 > ⚠️ All API requests to Silobase must include the appropriate key in the `x-api-key` header.
 
@@ -66,8 +74,12 @@ These environment variables are planned for future releases as Silobase expands 
 
 ```env
 # Database
-DB_CLIENT=pg
-DATABASE_URL=postgres://postgres:password@localhost:5432/mydb
+DB_CLIENT= pg # or mssql
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_PORT=
+DB_NAME=
 
 # API Keys
 API_KEY_READ=read-only-key
