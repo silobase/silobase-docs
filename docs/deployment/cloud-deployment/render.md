@@ -21,7 +21,7 @@
    |--------------------|------------------------------|
    | **Name**           | `silobase` (or your choice)  |
    | **Environment**    | `Node`                       |
-   | **Build Command**  | `npm run build`              |
+   | **Build Command**  | `npm install && npm run build`              |
    | **Start Command**  | `npm run serve`                  |
    | **Region**         | Closest to your database     |
 
