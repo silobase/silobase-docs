@@ -18,6 +18,8 @@ DB_NAME=
 API_KEY_READ=
 API_KEY_WRITE=
 API_KEY_FULL=
+
+MASK_FIELDS=
 ````
 
 ### Environment Variable Descriptions
@@ -33,6 +35,7 @@ API_KEY_FULL=
 | `API_KEY_READ`  | API key used to authorize `GET` requests (read-only access).                                       |
 | `API_KEY_WRITE` | API key used to authorize `POST`, `PUT`, and `DELETE` requests (write access).                     |
 | `API_KEY_FULL`  | Master key with full access to all operations (read, write, update, delete).                       |
+| `MASK_FIELDS`    | Fields to mask when returning response to users. (password and salt field is masked by default) |
 
 > All API requests to Silobase must include the appropriate key in the `x-api-key` header.
 
@@ -85,6 +88,8 @@ DB_NAME=
 API_KEY_READ=read-only-key
 API_KEY_WRITE=write-access-key
 API_KEY_FULL=admin-master-key
+
+MASK_FIELDS=
 ```
 
 ---
