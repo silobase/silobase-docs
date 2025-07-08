@@ -35,7 +35,7 @@ MASK_FIELDS=
 | `API_KEY_READ`  | API key used to authorize `GET` requests (read-only access).                                       |
 | `API_KEY_WRITE` | API key used to authorize `POST`, `PUT`, and `DELETE` requests (write access).                     |
 | `API_KEY_FULL`  | Master key with full access to all operations (read, write, update, delete).                       |
-| `MASK_FIELDS`    | Fields to mask when returning response to users. (password and salt field is masked by default) |
+| `MASK_FIELDS`    | Fields to mask when returning response to users. (password,salt, secret, hash field is masked by default) |
 
 > All API requests to Silobase must include the appropriate key in the `x-api-key` header.
 
