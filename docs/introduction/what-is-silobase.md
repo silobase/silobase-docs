@@ -2,7 +2,7 @@
 
 ## What is Silobase?
 
-**Silobase** is an open-source Backend-as-a-Service (BaaS) project that lets you expose your own infrastructure — like databases and file storage — over a simple, RESTful HTTP API with zero backend code.
+**Silobase** is an open-source self-hosted Backend-as-a-Service (BaaS) project that lets you expose your own infrastructure — like databases and file storage — over a simple, RESTful HTTP API with zero backend code.
 
 The idea started when I wanted to use Supabase for a project, but I didn’t want to be locked into a managed database. I already had a database I wanted to use — all I needed was a clean way to insert and retrieve data over HTTP.
 
