@@ -40,7 +40,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'PostgreSQL', link: '/deployment/database-connection/postgres' },
-              { text: 'MSSQL', link: '/deployment/database-connection/mssql' }
+              { text: 'MSSQL', link: '/deployment/database-connection/mssql' },
+               { text: 'MySQL', link: '/deployment/database-connection/mysql' }
             ]
           },
           {

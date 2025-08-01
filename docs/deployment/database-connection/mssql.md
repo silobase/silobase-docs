@@ -92,5 +92,5 @@ Silobase will auto-detect your existing tables and serve them through a secure R
 * Avoid using the default `sa` account in production environments.
 * Use strong passwords and never commit credentials to version control.
 * Consider securing production secrets via environment managers or cloud secrets managers.
-* When using Azure SQL, configure **firewall rules** to whitelist the Silobase deployment origin.
+* When using Any Cloud Provider, configure **firewall rules** to whitelist the Silobase deployment origin.
 
