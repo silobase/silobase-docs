@@ -3,7 +3,8 @@ layout: home
 
 hero:
   name: "Silobase"
-  tagline: "Plug in your infrastructure. Get instant REST APIs. No backend code required."
+  tagline: "The open-source BaaS for any database."
+  subtext: "Like Firebase or Supabase, but without vendor lock-in. Bring your own infrastructure, plug in your database, and get instant REST APIs with zero backend code."
 
   actions:
     - theme: brand
@@ -14,21 +15,24 @@ hero:
       link: /getting-started/example-requests
 
 features:
-  - title: Instant REST API
-    details: Silobase automatically turns your database tables into RESTful endpoints, accessible via standard HTTP verbs.
+  - title: For Enterprise Developers
+    details: Need something like Supabase or Firebase but not tied to Postgres or a proprietary database? Silobase integrates with the databases you already use and deploys anywhere you want.
 
-  - title: Config-First Architecture
-    details: Define your entire backend setup using simple environment variables—no backend code, no migrations, no boilerplate.
+  - title: For Frontend Developers
+    details: Skip the hassle of spinning up a new backend for every project. Use a single database and get a ready-to-use REST API for all your apps—no backend coding required.
 
-  - title: Bring Your Own Infrastructure
-    details: Use your existing PostgreSQL database today. Future support for file storage, MySQL, SQLite, MSSQL, and email providers.
+  - title: For Developers Who Want Control
+    details: Own your infrastructure and billing. Run Silobase on Render, AWS, Azure, or locally, and stay in control of your stack from day one.
+
+  - title: Future-Proof Your Data
+    details: Keep full ownership of your data from the start. Silobase is open source and MIT-licensed, so you’ll never face vendor lock-in.
+
+  - title: Config-First Setup
+    details: Define your backend in a simple `.env` file. Connect your database, set API keys, and deploy—no migrations, no boilerplate, no friction.
 
   - title: Secure by Default
-    details: Access is controlled through API keys with scoped permissions for reading, writing, or full access.
+    details: Protect your data with scoped API keys and automatic field masking. Sensitive information stays private, right out of the box.
 
-  - title: Extensible & Lightweight
-    details: Built with Fastify and Knex for performance and flexibility. Easily deploy anywhere - local, cloud, or containers.
-
-  - title: Open Source & Self-Hosted
-    details: 100% open source and MIT-licensed. Full control over your data and infrastructure with no vendor lock-in.
+  - title: Lightweight & Extensible
+    details: Built with Fastify and Knex for performance and flexibility. Deploy anywhere—local, cloud, or containers—with minimal overhead.
 ---
